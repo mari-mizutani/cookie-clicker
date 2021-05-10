@@ -22,20 +22,22 @@
         <div class="row px-5 pb-5">
             <div class="col-lg-6 col-md-12" id="cookie">
                 <div class="cursor"></div>
-                <img src="img/cookie.png" class="img-fluid d-block mx-auto">
+                <img src="img/cookie.png" class="img-fluid d-block mx-auto" onclick="playBtnSound()">
             </div>
-            <div class="col-lg-6 col-md-12 bg-dark p-5 black-boad">
-                <div class="text-white display-5">
+            <div class="col-lg-6 col-md-12 bg-dark p-5" id="blackboard">
+                <div class="text-white display-5 write">
                     <h4>Click the cookie!</h4>
-                    You got <span id="displayCount"></span> cookies!
+                    <p>You got <span id="displayCount"></span> cookies!</p>
+                    <div>
+                        <button type="button" class="btn btn-lg btn-info m-2" id="reset" role="button">Reset</button>
+                        <button type="button" class="btn btn-lg btn-info m-2" id="multiply" role="button">x 2</button>
+                    </div>
+                    <h4 class="pt-5">"x 2" ---- 1 click = 20 cookies</h4>
+    
                 </div>
             </div>
         </div>
-        <div class="row col-2 offset-10 text-center mx-auto">
-            <button type="button" class="btn btn-secondary btn-lg m-2" id="reset" role="button">Reset</button>
-            <button type="button" class="btn btn-secondary btn-lg m-2 disabled" id="multiply" role="button">x 2</button>
-            <!-- toggle bootstrap class "disabled" on multiply button -->
-        </div>
+
     </div>
     
     <script src="script.js"></script>
