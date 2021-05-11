@@ -29,12 +29,12 @@ let cost = multiNumber*10;
         document.getElementById("multiNum").innerHTML = multiNumber;
         document.getElementById("multiNum2").innerHTML = multiNumber;
         document.getElementById("multiNum3").innerHTML = multiNumber;
+        document.getElementById("multiNum4").innerHTML = multiNumber-1;
         
         cookieClick.addEventListener("click",function(){
             countCookie += 1 ; //add 1 on the original click point
             document.getElementById("cookieCount").innerHTML = countCookie;
         });
-
     };       
 });
 
