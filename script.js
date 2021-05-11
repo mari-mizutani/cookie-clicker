@@ -44,12 +44,13 @@ let autoBtn = document.getElementById("auto");
 autoBtn.addEventListener("click",function(){
     if(countCookie >=100){
 
-        countCookie = countCookie - 100;
+        countCookie = countCookie - 100; //purchase
         setInterval(addCookie,1000);
 
         function addCookie(){
             countCookie +=1; 
             document.getElementById("cookieCount").innerHTML = countCookie;
         }
+        autoBtn.disabled = true;
     }
 });
