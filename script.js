@@ -38,4 +38,18 @@ let cost = multiNumber*10;
     };       
 });
 
+//auto clicker (1click per 1sec)
+let autoBtn = document.getElementById("auto"); 
 
+autoBtn.addEventListener("click",function(){
+    if(countCookie >=100){
+
+        countCookie = countCookie - 100;
+        setInterval(addCookie,1000);
+
+        function addCookie(){
+            countCookie +=1; 
+            document.getElementById("cookieCount").innerHTML = countCookie;
+        }
+    }
+});

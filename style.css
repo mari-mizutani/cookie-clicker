@@ -16,9 +16,9 @@ h1{
 
 .write{
     position: relative;
-    top:5%;
     left:10%;
 }
+
 
 #cookie{
     perspective: 1000px;
@@ -35,14 +35,48 @@ h1{
     transition: transform .2s;
 }
 
-p{
+
+
+.pColor{
+    color: rgb(128, 218, 240);
+
+}
+
+.pColor2{
+
+}
+
+h4{
+    color: lightcoral;
+}
+
+.sign-container{
+    position: relative;
+    text-align: center;
+}
+
+.sign-container img{
+    width: 80%;
+}
+
+li{
+    font-size: 1.5em;
     line-height: 1em;
 }
 
-.h4Color{
-    color: rgb(128, 218, 240);
+@media only screen and (max-width: 600px) {
+    .sign-container img{
+        width: 100%;
+    }
+    li{
+        font-size: 1em;
+    }
+  }
+
+.sign{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.h4Color2{
-    color: lightcoral;
-}
