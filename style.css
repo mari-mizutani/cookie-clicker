@@ -16,7 +16,7 @@ h1{
 
 .write{
     position: relative;
-    top:10%;
+    top:5%;
     left:10%;
 }
 
@@ -31,10 +31,18 @@ h1{
 }
 
 #cookie img:active{
-    transform: scale(0.97);
+    transform: scale(0.98);
     transition: transform .2s;
 }
 
 p{
     line-height: 1em;
+}
+
+.h4Color{
+    color: rgb(128, 218, 240);
+}
+
+.h4Color2{
+    color: lightcoral;
 }
