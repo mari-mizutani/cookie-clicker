@@ -14,43 +14,28 @@ cookieClick.addEventListener("click",function(){
 });
 
 
-
-// //sound effect
-// let bleep = new Audio();
-// bleep.src = "click_sound.wav";
-// function playBtnSound(num){
-//     bleep.play();
-// };
-
-
+//multiply button
 let multiplyBtn = document.getElementById("multiply");  
-
-
-//multiply button function
-//when it's over 20, make the button clickable
-let multiClickable = (countCookie >= 20);
+let multiNumber = 2;
 
 multiplyBtn.addEventListener("click",function(){
-    //multiClickable = true;
-    if(countCookie>=20){
-        countCookie = countCookie -20;
+let cost = multiNumber*10;
+
+    if(countCookie >= cost){
+        
+        multiNumber+=1;
+        countCookie = countCookie - cost;
+
+        document.getElementById("multiNum").innerHTML = multiNumber;
+        document.getElementById("multiNum2").innerHTML = multiNumber;
+        document.getElementById("multiNum3").innerHTML = multiNumber;
+        
         cookieClick.addEventListener("click",function(){
             countCookie += 1 ; //add 1 on the original click point
             document.getElementById("cookieCount").innerHTML = countCookie;
         });
-    };
+
+    };       
 });
-
-
-// //reset button
-// let resetBtn = document.getElementById("reset");
-
-// resetBtn.addEventListener("click", function(){
-//     countCookie = 0;
-//     document.getElementById("cookieCount").innerHTML = countCookie;
-//     clickPoint = 0;
-//     document.getElementById("pointCount").innerHTML = clickPoint;
-//     multiClickable = false;
-// });
 
 
