@@ -1,12 +1,19 @@
 let cookieClick = document.getElementById("cookie");
 let countCookie = 0;
-document.getElementById("displayCount").innerHTML = countCookie;
+let clickPoint = 0;
+document.getElementById("cookieCount").innerHTML = countCookie;
+document.getElementById("pointCount").innerHTML = clickPoint;
 
-//click and count
+//click and count cookie
 cookieClick.addEventListener("click",function(){
     countCookie += 1;
-    document.getElementById("displayCount").innerHTML = countCookie;
+    document.getElementById("cookieCount").innerHTML = countCookie;
+    //count point
+    clickPoint += 1;
+    document.getElementById("pointCount").innerHTML = clickPoint;
 });
+
+
 
 // //sound effect
 // let bleep = new Audio();
@@ -21,7 +28,9 @@ let resetBtn = document.getElementById("reset");
 
 resetBtn.addEventListener("click", function(){
     countCookie = 0;
-    document.getElementById("displayCount").innerHTML = countCookie;
+    document.getElementById("cookieCount").innerHTML = countCookie;
+    clickPoint = 0;
+    document.getElementById("pointCount").innerHTML = clickPoint;
 });
 
 let multiplyBtn = document.getElementById("multiply");  
@@ -31,16 +40,11 @@ let multiplyBtn = document.getElementById("multiply");
 multiplyBtn.addEventListener("click", function(){
     //when it's over 20, make the button clickable
     if(countCookie >= 20){
-        if(countCookie == 20){
-            countCookie = countCookie * 2;
-            document.getElementById("displayCount").innerHTML = countCookie;
-        }else if(countCookie >= 40){
-            countCookie = countCookie * 2 -20;
-            document.getElementById("displayCount").innerHTML = countCookie;
-        }
-        
+        countCookie += 2;
+        document.getElementById("cookieCount").innerHTML = countCookie;
     };
 });
+
 
 
 
