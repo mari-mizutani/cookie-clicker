@@ -34,3 +34,7 @@ h1{
     transform: scale(0.97);
     transition: transform .2s;
 }
+
+p{
+    line-height: 1em;
+}
