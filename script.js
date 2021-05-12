@@ -27,7 +27,7 @@ let cost = multiNumber*10;
         countCookie = countCookie - cost;
         document.getElementById("cookieCount").innerHTML = countCookie;
 
-        document.getElementsByClassName("multiNum").innerHTML = multiNumber;
+        document.getElementById("multiNum").innerHTML = multiNumber;
         document.getElementById("multiNum2").innerHTML = multiNumber;
         document.getElementById("multiNum3").innerHTML = multiNumber;
         document.getElementById("multiNum4").innerHTML = multiNumber-1;
