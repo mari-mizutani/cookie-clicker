@@ -24,17 +24,26 @@ h1{
     perspective: 1000px;
 }
 
-#cookie img{
+#cookie{
     transform: scale(1); /*original size*/
     transform-style: preserve-3d;
     transition: transform .3s;
 }
 
-#cookie img:active{
+#cookie:active{
     transform: scale(0.98);
     transition: transform .2s;
 }
-
+.scale{
+    position: absolute;
+    top:90%;
+    left: -1%;   
+}
+.board{
+    position: absolute;
+    top:30%;
+    left: 42%;   
+}
 .perClick{
     font-size: 2em;
 }
@@ -74,7 +83,9 @@ li{
 
 .bonusP{
     font-size: 0.8em;
-    text-decoration-line: underline;
+    border-bottom: solid 1px lightcoral;
+    display: inline;
+    padding-bottom: 3px;
 }
 
 @media only screen and (max-width: 600px) {
