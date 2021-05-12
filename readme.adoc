@@ -3,3 +3,7 @@ Java script exercise
 = Cookie Clicker
 
 https://mari-mizutani.github.io/cookie-clicker/
+
+It was a good exercise to improve my basic knowledge of js.
+I've got stuck lots of the times, but it was mostly the problem
+which I don't write the code the right place.
