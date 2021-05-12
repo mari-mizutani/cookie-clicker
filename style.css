@@ -35,18 +35,27 @@ h1{
     transition: transform .2s;
 }
 
+.perClick{
+    font-size: 2em;
+}
 
+.btn-multi,.btn-auto{
+    border-color: rgb(128, 218, 240); 
+    background-color: rgb(128, 218, 240);
+}
+
+
+.btn-bonus{
+    border-color: lightcoral; 
+    background-color: lightcoral;
+}
 
 .pColor{
     color: rgb(128, 218, 240);
 
 }
 
-.pColor2{
-
-}
-
-h4{
+h4,.pColor2,#timer{
     color: lightcoral;
 }
 
@@ -61,13 +70,22 @@ h4{
 
 li{
     font-size: 1.5em;
-    line-height: 1em;
+}
+
+.bonusP{
+    font-size: 0.8em;
+    text-decoration-line: underline;
 }
 
 @media only screen and (max-width: 600px) {
     .sign-container img{
         width: 100%;
     }
+
+    .perClick{
+        font-size: 1em;
+    }
+
     li{
         font-size: 1em;
     }
