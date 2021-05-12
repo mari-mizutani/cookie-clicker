@@ -62,8 +62,8 @@ autoBtn.addEventListener("click",function(){
 let bonusBtn = document.getElementById("bonus"); 
 
 bonusBtn.addEventListener("click",function(){
-    if(countCookie >=100){
-        countCookie = countCookie - 100; //purchase
+    if(countCookie >=500){
+        countCookie = countCookie - 500; //purchase
         document.getElementById("cookieCount").innerHTML = countCookie;
 
         //timer
