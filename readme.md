@@ -1,6 +1,6 @@
 Java script exercise
 
-= Cookie Clicker
+# Cookie Clicker
 
 https://mari-mizutani.github.io/cookie-clicker/
 
@@ -11,3 +11,6 @@ which I don't write the code the right place.
 For set the time limitation of bonus button, I used if and else if statement.
 But I originally wanted to write the code with "setInterval" method.
 It is my next goal when I update this game.
+
+
+![screenshot](img/screenshot.png)
